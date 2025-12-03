@@ -1,8 +1,122 @@
+
+*{
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0;
+  margin: 0;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #f4f6fa;
+}
+h2{
+  text-align: center ;
+  padding: 2rem;
+  margin-top: 2rem;
 }
 
-a {
-  color: #00B7FF;
+header {
+  text-align: center;
+  color: white;
+  background:url("https://images.pexels.com/photos/7708409/pexels-photo-7708409.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
 }
+
+header div{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header div h1{
+  font-size: 3rem;
+}
+header div p{
+  font-size: 1.5rem;
+}
+
+nav{
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+}
+.enlace{
+  text-align: center;
+  padding: 1rem;
+}
+.center{
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1em;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: #007bff;
+  padding: 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+main {
+  padding: 0 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  margin-bottom: 2em;
+  flex-direction: column;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 1em;
+  width: 300px;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  height: 15rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  justify-items: center;
+  margin: 2em auto;
+  max-width: 900px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.pokemon-img-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+footer {
+  margin-top: 2em;
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1em 0;
+  margin-bottom: 0;
+}
+

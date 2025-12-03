@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= pokemon.nombre %> - PokéDex</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <header><%- include('partials/nav', { tipos: tipos }) %></header>
+    <main>
+      <section class="pokemon-detail">
+        <div class="pokemon-info">
+          <h2><%= pokemon.nombre %></h2>
+          <p class="center"><strong></strong> <%= pokemon.numero %></p>
+          <p class="center">
+            <strong></strong> <%= pokemon.tipo ? pokemon.tipo.join(', ') : '' %>
+          </p>
+        </div>
+        <div class="pokemon-img-center">
+          <img
+            src="<%= pokemon.imagen %>"
+            alt="<%= pokemon.nombre %>"
+            class="pokemon-img"
+          />
+        </div>
+        <div class="pokemon-desc"><%- pokemon.descripcion %></div>
+      </section>
+      <a class="enlace" href="/">Volver a la Pokedex</a>
+    </main>
+  </body>
+  <%- include('partials/footer') %>
+</html>

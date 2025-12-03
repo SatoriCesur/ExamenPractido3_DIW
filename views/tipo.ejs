@@ -7,7 +7,7 @@
   <body>
     <%- include('partials/nav', { tipos: tipos }) %>
     <main>
-      <h2>Pokémon Registrados</h2>
+      <h2>Pokémon de tipo <%= tipo %></h2>
       <section>
         <div class="cards-grid">
           <% pokemon.forEach(function(poke){ %>

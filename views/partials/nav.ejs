@@ -1,0 +1,18 @@
+<header>
+  <div>
+    <h1>PokéDex</h1>
+    <p>Enciclopedia Pokémon Completa</p>
+  </div>
+</header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Todos</a></li>
+      <% tipos.forEach(function(tipo){ %>
+      <li>
+        <a href="/tipo/<%= tipo %>"
+          ><%= tipo.charAt(0).toUpperCase() + tipo.slice(1) %></a
+        >
+      </li>
+      <% }); %>
+    </ul>
+  </nav>
